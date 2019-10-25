@@ -21,7 +21,7 @@ trait Pathkit
     {
         $reflection = new ReflectionClass($this);
 
-        return $reflection->getFileLocation();
+        return dirname($reflection->getFileName());
     }
 
     /**
