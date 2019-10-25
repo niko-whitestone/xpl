@@ -1,0 +1,21 @@
+{
+    "name": "whitestone/xpl",
+    "description": "Whitestone eXtended PHP Library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niko Hujanen",
+            "email": "niko@whitestone.fi"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Whitestone\\Xpl\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.0"
+    }
+}
