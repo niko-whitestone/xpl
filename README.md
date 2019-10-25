@@ -44,11 +44,21 @@ Helper for detecting current file location inside class context.
 
 Example 1:
 ```php
-class Bar {
-    use \Whitestone\Xpl\Pathkit;
-    
+abstract class Bar {
     public function add()
     {
+        echo "Do something\n";
+    }
+}
+
+class FooBar extends Bar
+{
+    use Pathkit;
+
+    public function add()
+    {
+        parent::add();
+
         $filePath = $this->myFilename();
         error_log("Deprecated method Bar->add() called in '{$filePath}'!");
     }
