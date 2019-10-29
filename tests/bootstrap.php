@@ -2,6 +2,7 @@
 
 use Whitestone\Xpl\Pathkit;
 use Whitestone\Xpl\Runkit;
+use Whitestone\Xpl\Renderer;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -16,4 +17,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
         {
             echo $value;
         }
+    }
+    
+    class Foobar
+    {
+        use Renderer;
     }
