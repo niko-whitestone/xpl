@@ -16,6 +16,10 @@ You can install Xpl using `composer`:
 composer require whitestone\xpl
 ```
 
+## Running tests
+
+Use `phpunit` or `composer run test` to run PHPUnit.
+
 ## `trait Whitestone\Xpl\Runkit`
 
 Contains single method for running closures in class context with simple parameter passthru.
